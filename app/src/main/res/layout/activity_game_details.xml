@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/gameInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Info"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#00BFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/gameDetailImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/game_image"
+            app:layout_constraintTop_toBottomOf="@id/gameInfoTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/gameDetailTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/gameDetailImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/gameDetailTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/gameDetailTitleLabel"
+            app:layout_constraintStart_toEndOf="@id/gameDetailTitleLabel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gameDetailTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/gameDetailTitleLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/gameDetailType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/gameDetailTypeLabel"
+            app:layout_constraintStart_toEndOf="@id/gameDetailTypeLabel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gameDetailPlayersLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nb players: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/gameDetailTypeLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/gameDetailPlayers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/gameDetailPlayersLabel"
+            app:layout_constraintStart_toEndOf="@id/gameDetailPlayersLabel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gameDetailYearLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/gameDetailPlayersLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/gameDetailYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="@id/gameDetailYearLabel"
+            app:layout_constraintStart_toEndOf="@id/gameDetailYearLabel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/gameDetailDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/gameDetailYearLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/infoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Do You Want to Know More?"
+            android:backgroundTint="#800080"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/gameDetailDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
